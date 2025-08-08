@@ -1,0 +1,49 @@
+@charset "utf-8";
+body {
+	padding-left: 10%;
+	padding-right: 10%;
+	background-color: #D1DECB;
+}
+
+p, a, ul, ol, li{
+	font-family: rosario, "Trebuchet MS", Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: medium;
+}
+
+a{
+	text-decoration: none;
+	color: #1E50C4;
+}
+
+h1, h2, h3{
+	font-family: rosario, "Trebuchet MS", Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-variant: small-caps;
+	font-size: x-large;
+}
+
+#header h1 {
+	color: #001D7C;
+	font-family: coda, nova-square, "Source Code Pro", "Courier New", monospace;
+	font-weight: 400;
+	font-style: normal;
+	text-align: left;
+	font-size: 48px;
+	font-variant: normal;
+}
+
+#navigation a {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#footer {
+	padding-top: 30px;
+	text-align: center;
+}
+#navigation {
+	padding-bottom: 30px;
+}
