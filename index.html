@@ -11,9 +11,9 @@
 <header id="header"><h1>Ramblings of an Engineer</h1></header>
 
 <nav id="navigation">
-  <a href="index.html">Home</a>
-  <a href="archive.html">Archive</a>
-  <a href="2025-02-02.html">Previous</a>
+	<a href="index.html">Home</a>
+	<a href="archive.html">Archive</a>
+	<a href="2025-02-02.html">Previous</a>
 </nav>
 
 <article>
@@ -21,23 +21,23 @@
 	<p>2025-08-11</p>
 	<p>About 5 years ago I started only buying new electronics that used USB-C, since it was clear that micro USB would be phased out. I keep my devices for a long time and didn’t want to have a “new” device go obsolete or difficult to keep using for being the last device on an old standard.</p>
 	<p>Recently, I’ve come close. There is still a Bluetooth Thinkpad keyboard (the battery lasts forever so it’s not trouble) and a pair of infrequently used headphones, but everything else uses USB-C. Then at the end of last year I got a power bank gifted to me from work with a dreaded micro USB connector.</p>
-  <img src="images/2025-08-11/PXL_20250319_174808347 - Copy.jpg" alt="Anker Astro E1 power bank">
+	<img src="images/2025-08-11/photo 1.jpg" alt="Anker Astro E1 power bank">
 	<p>I was open to having another power bank, but it needed to be up to spec. The ideal case would be a USB-C connector that fits on a micro-USB layout. There are plenty of other people who have <a href="https://www.reddit.com/r/AskElectronics/comments/xip6hs/wanted_usbc_receptacle_with_microb_footprint/">looked</a> for <a href="https://www.eevblog.com/forum/projects/type-c-in-micro-usb-footprint-(female-connectors)/">something</a> like this and it seems like they don’t exist. So I set out to do what any reasonable person would and rewired it myself.</p>
 	<p>I already had some 16 pin USB-C connectors from replacing one that broke off a development board, and I don’t like ordering new things when I don’t have to. (The best type of recycling is not manufacturing excess material to begin with, but I needed some spares!) I started by prying open the case, breaking some tabs in the process.</p>
-  <img src="images/2025-08-11/PXL_20250319_205104181 - Copy.jpg" alt="Broken tab off the edge of the device">
-  <img src="images/2025-08-11/PXL_20250319_210103698.MP - Copy.jpg" alt="Power bank case opened">
-  <img src="images/2025-08-11/PXL_20250319_210403456.MP - Copy.jpg" alt="Power bank electronics removed">
+	<img src="images/2025-08-11/photo 2.jpg" alt="Broken tab off the edge of the device">
+	<img src="images/2025-08-11/photo 3.jpg" alt="Power bank case opened">
+	<img src="images/2025-08-11/photo 4.jpg" alt="Power bank electronics removed">
 	<p>The batteries and electronics came out easily once the case was open. The USB connector happened to only have the 5V and ground connections attached. It was easy enough to get a couple wire wrap wires soldered onto those tabs and cover them with some polyimide tape so they don’t short to the case of the new connector.</p>
-	<img src="images/2025-08-11/PXL_20250422_055606123 - Copy.jpg" alt="Wires added to the power and ground terminals">
-  <p>To use a regular USB-C cable and charger, I also need 5.1k pullups on the CCx pins. The alternative would be relying on a USB type A to USB-C cable that doesn’t see those pins. This power bank only uses USB type A for the output which means I will always have the right cable, but I want the versatility! I wired up some resistors and dipped them in conformal coating so they don’t short to anything else.</p>
-	<img src="images/2025-08-11/PXL_20250423_041414530.MP - Copy.jpg" alt="Pull up resistors on wire wrap wire with conformal coating">
-  <p>I soldered together all the wires on the USB-C connector itself, and then soldered down some of the pins bent to match with the old connector’s through hole spacing. Then I trimmed the wires from the board and soldered them all together</p>
-  <img src="images/2025-08-11/PXL_20250425_052003537 - Copy.jpg" alt="New connector through hole tabs soldered in place">
-  <img src="images/2025-08-11/PXL_20250425_051956082 - Copy.jpg" alt="Wires in place">
-  <img src="images/2025-08-11/PXL_20250425_054735561.MP - Copy.jpg" alt="Wires soldered between connector and board">
-  <p>A quick check of the alignment shows the connector fits behind the old cutout. I widened the cutout a little with a dremel, glued the loose wires in place so they wouldn’t vibrate around and break, and reassembled the whole thing. A little caulk smoothed over the broken clips to give it a more finished look!</p>
-  <img src="images/2025-08-11/PXL_20250812_035633135 - Copy.jpg" alt="New front openeing">
-  <img src="images/2025-08-11/PXL_20250812_035725187 - Copy.jpg" alt="New side with silicone to seal the cracked case">
+	<img src="images/2025-08-11/photo 5.jpg" alt="Wires added to the power and ground terminals">
+	<p>To use a regular USB-C cable and charger, I also need 5.1k pullups on the CCx pins. The alternative would be relying on a USB type A to USB-C cable that doesn’t see those pins. This power bank only uses USB type A for the output which means I will always have the right cable, but I want the versatility! I wired up some resistors and dipped them in conformal coating so they don’t short to anything else.</p>
+	<img src="images/2025-08-11/photo 6.jpg" alt="Pull up resistors on wire wrap wire with conformal coating">
+	<p>I soldered together all the wires on the USB-C connector itself, and then soldered down some of the pins bent to match with the old connector’s through hole spacing. Then I trimmed the wires from the board and soldered them all together</p>
+	<img src="images/2025-08-11/photo 7.jpg" alt="New connector through hole tabs soldered in place">
+	<img src="images/2025-08-11/photo 8.jpg" alt="Wires in place">
+	<img src="images/2025-08-11/photo 9.jpg" alt="Wires soldered between connector and board">
+	<p>A quick check of the alignment shows the connector fits behind the old cutout. I widened the cutout a little with a dremel, glued the loose wires in place so they wouldn’t vibrate around and break, and reassembled the whole thing. A little caulk smoothed over the broken clips to give it a more finished look!</p>
+	<img src="images/2025-08-11/photo 10.jpg" alt="New front opening">
+	<img src="images/2025-08-11/photo 11.jpg" alt="New side with silicone to seal the cracked case">
 </article>
 
 <footer id="footer">© 2017-2025 Ethan Kennon</footer>
