@@ -2,4 +2,4 @@
 
 Working material for ramblingsofanengineer.com
 
-© 2017-2025 Ethan Kennon
+© 2017-2026 Ethan Kennon
